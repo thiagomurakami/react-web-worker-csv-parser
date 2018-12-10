@@ -40,6 +40,17 @@ class App extends Component {
   }
 
   handleChange = name => event => {
+    function mySlowFunction(baseNumber) {
+      console.time('mySlowFunction');
+      var result = 0;
+      for (var i = Math.pow(baseNumber, 10); i >= 0; i--) {
+        result += Math.atan(i) * Math.tan(i);
+      };
+      console.timeEnd('mySlowFunction');
+      return result;
+    }
+
+    mySlowFunction(5);
     this.setState({ [name]: event.target.checked })
   }
 
@@ -120,7 +131,9 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
         <div className="App">
           <header className="App-header">
+            <div className="App-logo-container">
             <img src={sonic} className="App-logo" alt="logo" />
+            </div>
             {this.state.isProcessing && (
               <div style={{ width: 500, margin: 50 }}>
                 <p>

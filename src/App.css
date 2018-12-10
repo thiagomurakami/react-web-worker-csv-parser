@@ -4,6 +4,16 @@
 
 .App-logo {
   height: 40vmin;
+  position: absolute;
+  top: 0;
+  animation: App-logo-spin 1s infinite;
+}
+
+.App-logo-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 300px;
 }
 
 .App-header {
@@ -23,9 +33,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    left: -90vw;
   }
   to {
-    transform: rotate(360deg);
+    left: 90vw;
   }
 }
