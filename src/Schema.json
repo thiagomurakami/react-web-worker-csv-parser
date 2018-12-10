@@ -1,0 +1,137 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Country",
+    "ItemType",
+    "OrderDate",
+    "OrderID",
+    "OrderPriority",
+    "Region",
+    "SalesChannel",
+    "ShipDate",
+    "TotalCost",
+    "TotalProfit",
+    "TotalRevenue",
+    "UnitCost",
+    "UnitPrice",
+    "UnitsSold"
+  ],
+  "properties": {
+    "Country": {
+      "$id": "#/properties/Country",
+      "type": "string",
+      "title": "The Country Schema",
+      "default": "",
+      "examples": ["Nicaragua"],
+      "pattern": "^(.*)$"
+    },
+    "Item-Type": {
+      "$id": "#/properties/Item-Type",
+      "type": "string",
+      "title": "The Item type Schema",
+      "default": "",
+      "examples": ["Beverages"],
+      "pattern": "^(.*)$"
+    },
+    "OrderDate": {
+      "$id": "#/properties/OrderDate",
+      "type": "string",
+      "title": "The Orderdate Schema",
+      "default": "",
+      "examples": ["2/8/2011"],
+      "pattern": "^(.*)$"
+    },
+    "OrderID": {
+      "$id": "#/properties/OrderID",
+      "type": "string",
+      "title": "The Orderid Schema",
+      "default": "",
+      "examples": ["963392674"],
+      "pattern": "^(.*)$"
+    },
+    "OrderPriority": {
+      "$id": "#/properties/OrderPriority",
+      "type": "string",
+      "title": "The Orderpriority Schema",
+      "default": "",
+      "examples": ["C"],
+      "pattern": "^(.*)$"
+    },
+    "Region": {
+      "$id": "#/properties/Region",
+      "type": "string",
+      "title": "The Region Schema",
+      "default": "",
+      "examples": ["Central America and the Caribbean"],
+      "pattern": "^(.*)$"
+    },
+    "SalesChannel": {
+      "$id": "#/properties/SalesChannel",
+      "type": "string",
+      "title": "The Saleschannel Schema",
+      "default": "",
+      "examples": ["Offline"],
+      "pattern": "^(.*)$"
+    },
+    "ShipDate": {
+      "$id": "#/properties/ShipDate",
+      "type": "string",
+      "title": "The Shipdate Schema",
+      "default": "",
+      "examples": ["3/21/2011"],
+      "pattern": "^(.*)$"
+    },
+    "TotalCost": {
+      "$id": "#/properties/TotalCost",
+      "type": "string",
+      "title": "The Totalcost Schema",
+      "default": "",
+      "examples": ["259279.24"],
+      "pattern": "^(.*)$"
+    },
+    "TotalProfit": {
+      "$id": "#/properties/TotalProfit",
+      "type": "string",
+      "title": "The Totalprofit Schema",
+      "default": "",
+      "examples": ["127722.96"],
+      "pattern": "^(.*)$"
+    },
+    "TotalRevenue": {
+      "$id": "#/properties/TotalRevenue",
+      "type": "string",
+      "title": "The Totalrevenue Schema",
+      "default": "",
+      "examples": ["387002.20"],
+      "pattern": "^(.*)$"
+    },
+    "UnitCost": {
+      "$id": "#/properties/UnitCost",
+      "type": "string",
+      "title": "The Unitcost Schema",
+      "default": "",
+      "examples": ["31.79"],
+      "pattern": "^(.*)$"
+    },
+    "UnitPrice": {
+      "$id": "#/properties/UnitPrice",
+      "type": "string",
+      "title": "The Unitprice Schema",
+      "default": "",
+      "examples": ["47.45"],
+      "pattern": "^(.*)$"
+    },
+    "UnitsSold": {
+      "$id": "#/properties/UnitsSold",
+      "type": "string",
+      "title": "The Unitssold Schema",
+      "default": "",
+      "examples": ["8156"],
+      "pattern": "^(.*)$"
+    }
+  }
+}
